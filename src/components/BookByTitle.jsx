@@ -3,7 +3,7 @@ import useFetch from "../useFetch";
 const BookByTitle = ({ title }) => {
   // console.log(title)
   const { data, loading, error } = useFetch(
-    `https://backend-book-manager.vercel.app/books/${title}`
+    `https://backend-book-manager-flame.vercel.app/books/${title}`
   );
   console.log(data)
 

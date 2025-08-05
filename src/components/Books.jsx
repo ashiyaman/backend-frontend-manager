@@ -3,11 +3,11 @@ import useFetch from "../useFetch";
 
 const Books = () => {
     const [successMessage, setSuccessMessage] = useState('')
-  const { data, loading, error } = useFetch("https://backend-book-manager.vercel.app/books");
+  const { data, loading, error } = useFetch("https://backend-book-manager-flame.vercel.app/books");
 
   const deleteHandler = async (bookId) => {
     try {
-      const response = await fetch(`https://backend-book-manager.vercel.app/books/${bookId}`, {
+      const response = await fetch(`https://backend-book-manager-flame.vercel.app/books/${bookId}`, {
         method: "DELETE",
       });
 

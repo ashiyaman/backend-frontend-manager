@@ -3,7 +3,7 @@ const { default: useFetch } = require("../useFetch");
 const BookByAuthor = ({authorName})=>{
     // console.log(authorName)
 
-    const {data, loading, error} = useFetch(`https://backend-book-manager.vercel.app/books/authors/${authorName}`)
+    const {data, loading, error} = useFetch(`https://backend-book-manager-flame.vercel.app/books/authors/${authorName}`)
     // console.log(data)
 
     return (
